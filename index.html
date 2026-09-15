@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Café del Hayedo — café de especialidad y pastelería en Rancagua</title>
+<meta name="description" content="Café del Hayedo, Membrillar 50 local 2, Rancagua. Café, bollería, pastelería, helados artesanales y sándwiches gourmet. 5,0 ★ con 23 reseñas en Google.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#343943">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23343943'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-family='Georgia,serif' font-size='32' fill='%23D8B285'%3EH%3C/text%3E%3C/svg%3E">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_CL">
+<meta property="og:site_name" content="Café del Hayedo">
+<meta property="og:title" content="Café del Hayedo — 5,0 ★ en Rancagua">
+<meta property="og:description" content="Espresso desde $2.000. Bollería, pastelería, helados artesanales y sándwiches gourmet. 23 reseñas, ni una negativa.">
+<meta property="og:url" content="https://mmedinacode.github.io/Cafe-Hayedo-Web/">
+<meta property="og:image" content="https://mmedinacode.github.io/Cafe-Hayedo-Web/fotos/hero-cafe-helado.jpg">
+<meta property="og:image:alt" content="Café helado y torta de chocolate en Café del Hayedo, Rancagua">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Brygada+1918:ital,wght@0,400;0,500;0,600;1,400&family=Golos+Text:wght@400;500;600;700&family=Questrial&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Loader: la pizarra de letras armándose, letra por letra. -->
+<div id="loader" class="loader" aria-hidden="true">
+  <div class="loader-board">
+    <span>H</span><span>A</span><span>Y</span><span>E</span><span>D</span><span>O</span>
+  </div>
+  <p class="loader-txt">Membrillar 50 · Rancagua</p>
+</div>
+
+<a class="skip" href="#main">Saltar al contenido</a>
+
+<header class="head">
+  <div class="head-in">
+    <a class="brand" href="#inicio" data-tab="inicio" aria-label="Café del Hayedo, ir al inicio">
+      <span class="brand-mark" aria-hidden="true">H</span>
+      <span class="brand-txt"><strong>Café del Hayedo</strong><em>Rancagua</em></span>
+    </a>
+    <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav" id="nav" aria-label="Secciones">
+      <ul class="nav-links">
+        <li><a href="#inicio"    data-tab="inicio" class="on">Inicio</a></li>
+        <li><a href="#nosotros"  data-tab="nosotros">Nosotros</a></li>
+        <li><a href="#carta"     data-tab="carta">Carta</a></li>
+        <li><a href="#resenas"   data-tab="resenas">Reseñas</a></li>
+        <li><a href="#redes"     data-tab="redes">Redes</a></li>
+        <li><a href="#visitanos" data-tab="visitanos">Visítanos</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ══════════════ INICIO ══════════════ -->
+<section class="tab-panel on" data-tab-panel="inicio" id="inicio">
+  <div class="hero">
+    <div class="hero-txt">
+      <p class="eyebrow">Membrillar 50, local 2 · Rancagua</p>
+      <h1>Un hayedo es<br>un bosque<br><em>de hayas.</em></h1>
+      <p class="hero-lead">
+        Y de esa madera rubia son sus mesas. Café de verdad, bollería,
+        pastelería, helados artesanales y sándwiches gourmet, con
+        <strong>todo preparado en el momento</strong>.
+      </p>
+
+      <ul class="sellos" aria-label="Lo que ofrecen">
+        <li>Bollería</li>
+        <li>Pastelería</li>
+        <li>Helados artesanales</li>
+        <li>Sándwiches gourmet</li>
+      </ul>
+
+      <div class="hero-cta">
+        <a class="btn btn-solid" href="#carta" data-tab="carta">Ver la carta</a>
+        <a class="btn btn-ghost" href="#resenas" data-tab="resenas">Leer las reseñas</a>
+      </div>
+      <p class="hero-open">
+        <span class="dot" id="statusDot" aria-hidden="true"></span>
+        <span data-horario-estado>Lunes a viernes de 08:00 a 17:00</span>
+      </p>
+    </div>
+    <figure class="hero-img">
+      <img src="fotos/hero-cafe-helado.jpg" alt="Café helado junto a una torta de chocolate y naranja en Café del Hayedo" fetchpriority="high" decoding="async">
+      <figcaption class="hero-cap">Café helado · $6.000</figcaption>
+    </figure>
+  </div>
+
+  <div class="wrap">
+    <div class="cifras reveal stagger">
+      <div><b data-contar>5,0</b><span>★ en Google</span></div>
+      <div><b data-contar>23</b><span>reseñas, cero malas</span></div>
+      <div><b>$2.000</b><span>el espresso</span></div>
+      <div><b data-contar>2.264</b><span>en Instagram</span></div>
+    </div>
+
+    <div class="tri reveal stagger">
+      <article class="tri-card">
+        <h3>5,0 redondo</h3>
+        <p>Veintitrés reseñas y <strong>ninguna bajo cinco estrellas</strong>.
+           Es el único local de esta serie con el rating perfecto.</p>
+        <a href="#resenas" data-tab="resenas" class="lnk">Leer las reseñas →</a>
+      </article>
+      <article class="tri-card">
+        <h3>Precios de verdad</h3>
+        <p>Espresso $2.000, flat white $2.990, latte $3.500. Están en la
+           pizarra del local y acá van tal cual.</p>
+        <a href="#carta" data-tab="carta" class="lnk">Ver la pizarra →</a>
+      </article>
+      <article class="tri-card">
+        <h3>Con estacionamiento</h3>
+        <p>“Es fácil llegar en auto sin problemas, <strong>sin pago</strong>
+           y cómodo para tomar un buen desayuno”, dice un Local Guide.</p>
+        <a href="#visitanos" data-tab="visitanos" class="lnk">Cómo llegar →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ NOSOTROS ══════════════ -->
+<section class="tab-panel" data-tab-panel="nosotros" id="nosotros">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <p class="eyebrow">Nosotros</p>
+      <h2>Todo preparado<br>en el momento</h2>
+      <p class="sec-lead">
+        Es la frase que usa un Local Guide que ha ido a cafeterías de
+        Santiago, Rancagua y el sur.
+      </p>
+    </header>
+
+    <div class="split reveal">
+      <figure class="split-img">
+        <img src="fotos/vitrina.jpg" alt="Vitrina de Café del Hayedo con croissants, hojaldres, macarons y una torta" loading="lazy" decoding="async">
+        <figcaption>La vitrina, a media mañana</figcaption>
+      </figure>
+      <div class="split-txt">
+        <h3>“Lleno de cositas ricas”</h3>
+        <blockquote class="cita">
+          “Un latte de caramelo delicioso. En la vitrina tienen lleno de
+          cositas ricas, me encantó.”
+          <cite>Arantxa Araya, Local Guide con 24 reseñas</cite>
+        </blockquote>
+        <p>
+          Croissants, hojaldres, <strong>macarons</strong> y tortas por
+          porción. Google saca “postres” y “macarrones” como los dos temas
+          que más se repiten en sus reseñas.
+        </p>
+      </div>
+    </div>
+
+    <div class="split split-rev reveal">
+      <figure class="split-img">
+        <img src="fotos/mesa-compartida.jpg" alt="Mesa de madera con sándwich de jamón serrano, capuchino, latte y croissant" loading="lazy" decoding="async">
+        <figcaption>Sándwich de serrano, capuchino y croissant</figcaption>
+      </figure>
+      <div class="split-txt">
+        <h3>Y una playlist propia</h3>
+        <p>
+          El único link de su Instagram no es una carta ni un delivery:
+          es <strong>una playlist de Spotify</strong> que se llama
+          “Café del Hayedo PM”. Y en las reseñas alguien anota, sin que
+          nadie le pregunte, <em>“muy limpio, buena música”</em>.
+        </p>
+        <p>
+          Lo demás encaja: mesas de madera de haya, loza azul porcelana,
+          plantas, y espacio amplio — <strong>“de fácil acceso” en silla de
+          ruedas</strong>, según el mismo Local Guide.
+        </p>
+        <a class="lnk" href="https://open.spotify.com/playlist/0JdZNand9zSd0FTIrzscPE" target="_blank" rel="noopener">Escuchar su playlist →</a>
+      </div>
+    </div>
+
+    <div class="gal reveal stagger">
+      <figure><img src="fotos/espresso.jpg" alt="Espresso cayendo dentro de una taza blanca" loading="lazy" decoding="async"></figure>
+      <figure><img src="fotos/hero-cafe-helado.jpg" alt="Café helado y torta de chocolate y naranja" loading="lazy" decoding="async"></figure>
+      <figure><img src="fotos/vitrina.jpg" alt="Vitrina con macarons de colores" loading="lazy" decoding="async"></figure>
+      <figure><img src="fotos/mesa-compartida.jpg" alt="Mesa servida con café y croissant" loading="lazy" decoding="async"></figure>
+    </div>
+    <p class="note">Todas las fotos son del propio local, de su ficha de Google Maps.</p>
+
+    <!--
+      ⚠️ FALTA FOTO DEL SALÓN.
+      En su ficha no hay ninguna foto del interior ni de la fachada: sólo
+      el Street View de Google, que no es material del local y no se usa.
+      Hay que pedírsela.
+    -->
+    <div class="aviso reveal">
+      <strong>Nota honesta:</strong> en su ficha no hay ni una foto del
+      salón. Todas las de acá son de sus productos. Con dos fotos del local
+      —la vitrina completa y una mesa junto a la ventana— esta página
+      mejora sola.
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ CARTA ══════════════ -->
+<section class="tab-panel" data-tab-panel="carta" id="carta">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <p class="eyebrow">Carta</p>
+      <h2>Su pizarra,<br>tal cual</h2>
+      <p class="sec-lead">
+        Los precios de las bebidas están transcritos de la foto de su propia
+        pizarra, publicada en su ficha de Google.
+      </p>
+    </header>
+
+    <section class="carta-bloque reveal">
+      <header class="carta-bloque-head">
+        <h3>Cafetería</h3>
+        <span class="carta-bloque-n">precios reales</span>
+      </header>
+
+      <!-- La pizarra: el objeto de marca del local, reconstruido en HTML
+           para que se pueda leer, buscar y usar en el móvil. -->
+      <div class="board reveal">
+        <p class="board-top" aria-hidden="true">★ MENU ★</p>
+        <ul class="board-list stagger">
+          <li><span>Espresso</span><b>2.000</b></li>
+          <li><span>Americano</span><b>2.500</b></li>
+          <li><span>Flat white</span><b>2.990</b></li>
+          <li><span>Capuccino</span><b>3.200</b></li>
+          <li class="sub"><span>Capuccino vainilla</span><b>3.700</b></li>
+          <li><span>Latte</span><b>3.500</b></li>
+          <li class="sub"><span>Latte caramelo / vainilla</span><b>3.900</b></li>
+          <li><span>Mokaccino</span><b class="board-sin">—</b></li>
+          <li><span>Chocolate</span><b>4.200</b></li>
+          <li><span>Chai latte</span><b>3.500</b></li>
+          <li><span>Dirty chai</span><b>3.900</b></li>
+          <li><span>Jugos</span><b>3.800</b></li>
+          <li><span>Café helado</span><b>6.000</b></li>
+        </ul>
+      </div>
+      <!--
+        ⚠️ MOKACCINO VA SIN PRECIO A PROPÓSITO.
+        En la pizarra del local su casilla está vacía. No se le inventa un
+        valor ni se le copia el del chocolate.
+      -->
+      <p class="note">
+        El <b>mokaccino</b> aparece en su pizarra <b>sin precio asignado</b>:
+        acá se deja igual, sin inventarlo. “Chocolate” es el chocolate
+        caliente, uno de los temas que Google extrae de sus reseñas.
+      </p>
+    </section>
+
+    <div class="aviso reveal">
+      <strong>Sobre el resto de la carta:</strong> de la bollería, la
+      pastelería, los helados y los sándwiches <b>no hay ningún precio
+      publicado</b> — ni en su ficha, ni en su Instagram, ni en el link de
+      carta que tienen en Google (que además está caído, ver más abajo).
+      Así que van sin precio, en vez de con uno inventado.
+    </div>
+
+    <section class="carta-bloque reveal">
+      <header class="carta-bloque-head">
+        <h3>Bollería</h3>
+        <span class="carta-bloque-n">de su vitrina</span>
+      </header>
+      <div class="menu reveal stagger">
+        <article class="menu-item">
+          <img src="fotos/vitrina.jpg" alt="Croissants en la vitrina" loading="lazy" decoding="async">
+          <div><h4>Croissants</h4><p>Se ven en dos bandejas de su vitrina.</p></div>
+          <span class="price">Consultar</span></article>
+        <article class="menu-item"><div><h4>Hojaldres y caracolas</h4><p>Vistos en la bandeja del medio de su vitrina.</p></div><span class="price">Consultar</span></article>
+      </div>
+    </section>
+
+    <section class="carta-bloque reveal">
+      <header class="carta-bloque-head">
+        <h3>Pastelería</h3>
+        <span class="carta-bloque-n">4 opciones</span>
+      </header>
+      <div class="menu reveal stagger">
+        <article class="menu-item"><div><h4>Macarons</h4><p>Google extrae “macarrones” como uno de los temas de sus reseñas.</p></div><span class="price">Consultar</span></article>
+        <article class="menu-item">
+          <img src="fotos/hero-cafe-helado.jpg" alt="Torta de chocolate y naranja por porción" loading="lazy" decoding="async">
+          <div><h4>Tortas por porción</h4><p>En sus fotos: chocolate con naranja, y una de crema y nueces.</p></div>
+          <span class="price">Consultar</span></article>
+        <article class="menu-item"><div><h4>Tortas enteras</h4><p>Se ven completas en la vitrina.</p></div><span class="price">Consultar</span></article>
+        <article class="menu-item"><div><h4>Postres</h4><p>“Postres” es el tema nº1 que Google extrae de sus reseñas.</p></div><span class="price">Consultar</span></article>
+      </div>
+    </section>
+
+    <section class="carta-bloque reveal">
+      <header class="carta-bloque-head">
+        <h3>Salado</h3>
+        <span class="carta-bloque-n">3 opciones</span>
+      </header>
+      <div class="menu reveal stagger">
+        <article class="menu-item">
+          <img src="fotos/mesa-compartida.jpg" alt="Sándwich abierto con jamón serrano y albahaca" loading="lazy" decoding="async">
+          <div><h4>Sándwiches gourmet</h4><p>De su propia bio. En sus fotos, uno con jamón serrano y albahaca.</p></div>
+          <span class="price">Consultar</span></article>
+        <article class="menu-item"><div><h4>Desayunos</h4><p>Un Local Guide marcó su visita como “tipo de comida: desayuno”.</p></div><span class="price">Consultar</span></article>
+        <article class="menu-item"><div><h4>Puré natural</h4><p>“Puré natural 10/10”, dice Maite Baker. Tienen platos preparados.</p></div><span class="price">Consultar</span></article>
+      </div>
+    </section>
+
+    <section class="carta-bloque reveal">
+      <header class="carta-bloque-head">
+        <h3>Helados artesanales</h3>
+        <span class="carta-bloque-n">de su propia bio</span>
+      </header>
+      <div class="aviso reveal">
+        Su bio de Instagram los nombra entre sus cuatro especialidades:
+        <b>“bollería, pastelería, helados artesanales y sándwiches
+        gourmet”</b>. No hay fotos ni sabores publicados, así que conviene
+        preguntar por los del día.
+      </div>
+    </section>
+
+    <section class="carta-bloque reveal">
+      <header class="carta-bloque-head">
+        <h3>Vegetarianos</h3>
+        <span class="carta-bloque-n">verificado en reseñas</span>
+      </header>
+      <div class="aviso reveal">
+        Un Local Guide con 74 reseñas llenó el campo de opciones
+        vegetarianas de su ficha con esta frase: <b>“Tiene todas las
+        opciones y pronto irán añadiendo más”</b>.
+      </div>
+    </section>
+
+    <p class="note">
+      Precios de bebidas transcritos de la foto de su pizarra publicada en
+      su ficha de Google. Conviene confirmarlos en el local.
+    </p>
+  </div>
+</section>
+
+<!-- ══════════════ RESEÑAS ══════════════ -->
+<section class="tab-panel" data-tab-panel="resenas" id="resenas">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <p class="eyebrow">Reseñas</p>
+      <h2>5,0 ★ · 23 reseñas</h2>
+      <p class="sec-lead">Las 23 son de cinco estrellas. Copiadas tal cual de su ficha.</p>
+    </header>
+
+    <div class="revs reveal stagger">
+      <blockquote class="rev">
+        <p class="stars" aria-label="5 de 5 estrellas">★★★★★</p>
+        <p>Es una excelente cafetería que se diferencia bastante de las demás, tienen productos muy buenos y demasiado deliciosos, además sus ingredientes son de bastante calidad, el café es buenísimo, e ido a varias cafeterías tanto de Santiago, rancagua y el sur y está esta es buenísima por sobre muchas igual todo es preparado en el momento con ingredientes frescos. La recomiendo totalmente a todos.</p>
+        <footer><b>Diego Aliaga</b><span>Local Guide · 74 reseñas</span></footer>
+      </blockquote>
+
+      <blockquote class="rev">
+        <p class="stars" aria-label="5 de 5 estrellas">★★★★★</p>
+        <p>Rico café, atención agradable y muy amable. La comida estaba deliciosa, puré natural 10/10. Muy recomendado</p>
+        <footer><b>Maite Baker</b><span>Local Guide · 10 reseñas</span></footer>
+      </blockquote>
+
+      <blockquote class="rev">
+        <p class="stars" aria-label="5 de 5 estrellas">★★★★★</p>
+        <p>Un latte de caramelo delicioso 🙂‍↔️ en la vitrina tienen lleno de cositas ricas, me encantó</p>
+        <footer><b>Arantxa Araya</b><span>Local Guide · 24 reseñas</span></footer>
+      </blockquote>
+    </div>
+
+    <!-- Los campos opcionales que Diego Aliaga llenó en su reseña. Son
+         datos verificables que normalmente hay que preguntarle al local. -->
+    <div class="fichas reveal stagger">
+      <div class="ficha"><b>Estacionamiento</b><p>“Es fácil llegar en auto sin problemas, sin pago y cómodo para tomar un buen desayuno”</p></div>
+      <div class="ficha"><b>Con niños</b><p>“Totalmente, el espacio es cómodo, muy limpio buena música, muy recomendable para ir con la familia”</p></div>
+      <div class="ficha"><b>Silla de ruedas</b><p>“Es de fácil acceso y de espacio amplio, muy cómoda”</p></div>
+      <div class="ficha"><b>Vegetarianos</b><p>“Tiene todas las opciones y pronto irán añadiendo más”</p></div>
+    </div>
+    <p class="note">Los cuatro recuadros son campos que un Local Guide llenó en su reseña de Google.</p>
+
+    <div class="rev-cta reveal">
+      <a class="btn btn-solid" href="https://search.google.com/local/reviews?placeid=ChIJ6a1vOgBFY5YRTaWDtAtgO2s" target="_blank" rel="noopener">Leer las 23 reseñas</a>
+      <a class="btn btn-ghost" href="https://search.google.com/local/writereview?placeid=ChIJ6a1vOgBFY5YRTaWDtAtgO2s" target="_blank" rel="noopener">Dejar una reseña</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ REDES ══════════════ -->
+<section class="tab-panel" data-tab-panel="redes" id="redes">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <p class="eyebrow">Redes</p>
+      <h2>Dónde encontrarnos</h2>
+      <p class="sec-lead">Sólo lo verificado. Ningún perfil inventado.</p>
+    </header>
+
+    <div class="redes">
+      <!-- Instagram verificado el 15-09-2026: @cafedelhayedo, 2.264
+           seguidores. Las 3 fotos de la rejilla son REALES del local (de su
+           ficha de Maps), no scrapeadas de Instagram: el pie lo dice. -->
+      <article class="red-card reveal">
+        <a class="red-card-head" href="https://www.instagram.com/cafedelhayedo/" target="_blank" rel="noopener">
+          <span class="red-logo red-logo-ig"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></span>
+          <span class="red-card-txt">
+            <b>@cafedelhayedo</b>
+            <em>2.264 seguidores</em>
+          </span>
+          <span class="red-card-cta">Ver perfil →</span>
+        </a>
+        <a class="red-grid" href="https://www.instagram.com/cafedelhayedo/" target="_blank" rel="noopener"
+           data-cta="Ver en Instagram" aria-label="Abrir el Instagram de Café del Hayedo">
+          <figure><img src="fotos/hero-cafe-helado.jpg" alt="Café helado con torta" loading="lazy" decoding="async"></figure>
+          <figure><img src="fotos/vitrina.jpg" alt="Vitrina con macarons y croissants" loading="lazy" decoding="async"></figure>
+          <figure><img src="fotos/espresso.jpg" alt="Espresso cayendo a la taza" loading="lazy" decoding="async"></figure>
+        </a>
+        <p class="red-pie">Es su único canal de contacto: no publican teléfono.</p>
+      </article>
+
+      <article class="red-card reveal">
+        <a class="red-card-head" href="https://www.google.com/maps/search/?api=1&query=Caf%C3%A9%20del%20Hayedo&query_place_id=ChIJ6a1vOgBFY5YRTaWDtAtgO2s" target="_blank" rel="noopener">
+          <span class="red-logo red-logo-map"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C7.31 0 3.5 3.81 3.5 8.5c0 6.38 8.5 15.5 8.5 15.5s8.5-9.12 8.5-15.5C20.5 3.81 16.69 0 12 0zm0 11.6a3.1 3.1 0 110-6.2 3.1 3.1 0 010 6.2z"/></svg></span>
+          <span class="red-card-txt">
+            <b>Ficha en Google Maps</b>
+            <em>5,0 ★ · 23 reseñas</em>
+          </span>
+          <span class="red-card-cta">Abrir →</span>
+        </a>
+        <a class="red-grid" href="https://www.google.com/maps/search/?api=1&query=Caf%C3%A9%20del%20Hayedo&query_place_id=ChIJ6a1vOgBFY5YRTaWDtAtgO2s" target="_blank" rel="noopener"
+           data-cta="Ver la ficha" aria-label="Abrir la ficha de Café del Hayedo en Google Maps">
+          <figure><img src="fotos/mesa-compartida.jpg" alt="Mesa servida con café y croissant" loading="lazy" decoding="async"></figure>
+          <figure><img src="fotos/pizarra-precios.jpg" alt="Pizarra del menú con los precios" loading="lazy" decoding="async"></figure>
+          <figure><img src="fotos/vitrina.jpg" alt="Vitrina de pastelería" loading="lazy" decoding="async"></figure>
+        </a>
+        <p class="red-pie">Su ficha todavía figura <b>sin reclamar</b>.</p>
+      </article>
+
+      <!-- Playlist verificada el 15-09-2026: el tinyurl de su bio resuelve
+           a este playlist de Spotify y responde HTTP 200. -->
+      <article class="red-card reveal">
+        <a class="red-card-head" href="https://open.spotify.com/playlist/0JdZNand9zSd0FTIrzscPE" target="_blank" rel="noopener">
+          <span class="red-logo red-logo-sp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg></span>
+          <span class="red-card-txt">
+            <b>“Café del Hayedo PM”</b>
+            <em>Su playlist en Spotify</em>
+          </span>
+          <span class="red-card-cta">Escuchar →</span>
+        </a>
+        <p class="red-pie">
+          Es el único link de su bio de Instagram. Y una reseña lo confirma:
+          <b>“muy limpio, buena música”</b>.
+        </p>
+      </article>
+    </div>
+
+    <!--
+      ⚠️ GANCHO DE VENTA VERIFICADO DOS VECES EL 15-09-2026.
+      El botón "Carta" de su ficha apunta a
+      drive.google.com/file/d/1mUuKW8bHqHPx46b9vLXM7qQjP-mGstOr/view
+      y responde HTTP 404 con "el archivo que has solicitado no existe".
+      No es falta de permisos: el archivo ya no está.
+    -->
+    <div class="aviso aviso-rojo reveal">
+      <strong>Y una cosa que hay que arreglar ya:</strong> el botón
+      <b>“Carta”</b> que aparece en su ficha de Google apunta a un archivo
+      de Google Drive que <b>ya no existe</b>. Quien lo pincha ve una
+      página de error. <b>Su playlist funciona; su carta, no.</b>
+    </div>
+
+    <!-- ⚠️ PENDIENTE: teléfono (no publican ninguno) y TikTok (no buscado). -->
+  </div>
+</section>
+
+<!-- ══════════════ VISÍTANOS ══════════════ -->
+<section class="tab-panel" data-tab-panel="visitanos" id="visitanos">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <p class="eyebrow">Visítanos</p>
+      <h2>Membrillar 50, local 2</h2>
+    </header>
+
+    <div class="visit reveal">
+      <div class="visit-info">
+        <div class="vblock">
+          <h3>Dirección</h3>
+          <p>Membrillar 50, local 2<br>Rancagua, Región de O'Higgins</p>
+          <p class="sub">Plus Code R7H8+FC · con estacionamiento gratuito</p>
+        </div>
+
+        <div class="vblock">
+          <h3>Horario</h3>
+          <p class="estado"><span class="dot" aria-hidden="true"></span><span data-horario-estado>Lunes a viernes de 08:00 a 17:00</span></p>
+          <ul class="horario horario-semana" id="horario-lista" data-horario-semana>
+            <li data-dia="1"><span>Lunes</span><b>08:00 – 17:00</b></li>
+            <li data-dia="2"><span>Martes</span><b>08:00 – 17:00</b></li>
+            <li data-dia="3"><span>Miércoles</span><b>08:00 – 17:00</b></li>
+            <li data-dia="4"><span>Jueves</span><b>08:00 – 17:00</b></li>
+            <li data-dia="5"><span>Viernes</span><b>08:00 – 17:00</b></li>
+            <li data-dia="6"><span>Sábado</span><b class="cerrado">Cerrado</b></li>
+            <li data-dia="0"><span>Domingo</span><b class="cerrado">Cerrado</b></li>
+          </ul>
+          <p class="sub">
+            Según su ficha de Google, consultada el 15-09-2026. Es un café
+            de días de semana: cierra a las cinco y no abre el fin de
+            semana.
+          </p>
+        </div>
+
+        <div class="vblock">
+          <h3>Contacto</h3>
+          <a class="vtel" href="https://www.instagram.com/cafedelhayedo/" target="_blank" rel="noopener">
+            <span class="vtel-ico" style="background:linear-gradient(45deg,#F9CE34,#EE2A7B 50%,#6228D7)" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></span>
+            <span class="vtel-txt">
+              <b>@cafedelhayedo</b>
+              <em>Su único canal: no publican teléfono</em>
+            </span>
+            <span class="vtel-flecha" aria-hidden="true">→</span>
+          </a>
+        </div>
+
+        <div class="vblock">
+          <h3>Cómo se puede pedir</h3>
+          <ul class="vpedir">
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18v2H3V5zm2 4h14l-1 5h-4v6h-2v-6H6L5 9zm-1 12h16v2H4v-2z"/></svg> Consumo en el lugar</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 7V6a6 6 0 1112 0v1h3v14a2 2 0 01-2 2H5a2 2 0 01-2-2V7h3zm2 0h8V6a4 4 0 10-8 0v1z"/></svg> Para llevar</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h11v9H3V6zm12 3h3.5L21 12.5V15h-6V9zM6.5 20a2 2 0 110-4 2 2 0 010 4zm11 0a2 2 0 110-4 2 2 0 010 4z"/></svg> Entrega a domicilio</li>
+          </ul>
+          <p class="sub">
+            Servicios declarados en su ficha de Google. La entrega a
+            domicilio la declaran ellos, pero <b>no dicen por dónde se
+            pide</b>: hay que preguntar por Instagram.
+          </p>
+        </div>
+
+        <div class="vblock vblock-cta">
+          <a class="btn btn-solid" href="https://www.google.com/maps/dir/?api=1&destination=Caf%C3%A9%20del%20Hayedo%20Rancagua&destination_place_id=ChIJ6a1vOgBFY5YRTaWDtAtgO2s" target="_blank" rel="noopener">Cómo llegar</a>
+          <a class="btn btn-ghost" href="https://waze.com/ul?ll=-34.1713121,-70.73398&navigate=yes" target="_blank" rel="noopener">Ir con Waze</a>
+        </div>
+      </div>
+
+      <div class="visit-map">
+        <!-- ⚠️ SIN loading="lazy": vive en pestaña display:none y no cargaría. -->
+        <iframe
+          title="Mapa de Café del Hayedo en Membrillar 50, Rancagua"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3300!2d-70.73398!3d-34.1713121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x966345003a6fade9%3A0x6b3b600bb483a54d!2sCaf%C3%A9%20del%20Hayedo!5e0!3m2!1ses!2scl!4v1757900000000!5m2!1ses!2scl"
+          width="100%" height="100%" style="border:0" allowfullscreen=""
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- Flotantes. Derecha = contacto: sólo Instagram, no publican teléfono.
+     Izquierda libre: declaran entrega a domicilio pero por ninguna
+     plataforma (Rappi / Uber Eats / PedidosYa), así que no hay link real
+     al que mandar a nadie. -->
+<div class="float float-right">
+  <a class="fab fab-ig" href="https://www.instagram.com/cafedelhayedo/" target="_blank" rel="noopener"
+     data-label="Instagram" aria-label="Instagram de Café del Hayedo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+  <a class="fab fab-sp" href="https://open.spotify.com/playlist/0JdZNand9zSd0FTIrzscPE" target="_blank" rel="noopener"
+     data-label="Su playlist" aria-label="Escuchar la playlist de Café del Hayedo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg></a>
+  <button class="fab fab-top" id="toTop" data-label="Volver arriba" aria-label="Volver arriba"
+    style="background:var(--pizarra);color:#fff"><span aria-hidden="true">↑</span></button>
+</div>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <div>
+      <p class="foot-brand">Café del Hayedo</p>
+      <p>Membrillar 50, local 2 · Rancagua</p>
+      <p data-horario-resumen>Lunes a viernes 08:00 – 17:00 · Sábado y domingo cerrado</p>
+      <p><a href="https://www.instagram.com/cafedelhayedo/" target="_blank" rel="noopener">@cafedelhayedo</a></p>
+    </div>
+    <div class="foot-demo">
+      <p><strong>Esta es una demo.</strong> No es el sitio oficial de Café del Hayedo.</p>
+      <p>Hecha con datos públicos reales de su ficha de Google Maps, su
+         Instagram y la foto de su propia pizarra (verificados el
+         15-09-2026) para mostrarle al local cómo se vería su página web.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+window.HORARIO = {
+  dias: ["08:00 - 17:00","08:00 - 17:00","08:00 - 17:00","08:00 - 17:00",
+         "08:00 - 17:00","Cerrado","Cerrado"],
+  fuente: "Ficha de Google Maps, 15-09-2026"
+};
+/* Instagram VERIFICADO el 15-09-2026: @cafedelhayedo, 2.264 seguidores.
+   Las fotos de la rejilla son reales del local, de su ficha de Maps. */
+window.REDES = {
+  instagram: {
+    user: "cafedelhayedo",
+    seguidores: "2.264",
+    fotos: ["fotos/hero-cafe-helado.jpg","fotos/vitrina.jpg","fotos/espresso.jpg"]
+  }
+};
+</script>
+
+<script src="script.js"></script>
+<script src="vida.js"></script>
+<script src="carta-fotos.js"></script>
+<script src="carrito.js"></script>
+<script src="horario.js"></script>
+<script src="redes.js"></script>
+</body>
+</html>
