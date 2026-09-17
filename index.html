@@ -24,6 +24,70 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Brygada+1918:ital,wght@0,400;0,500;0,600;1,400&family=Golos+Text:wght@400;500;600;700&family=Questrial&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="pulido.css">
+
+<!-- ══════════════════════════════════════════════════════════════
+     Datos estructurados (schema.org)
+     ══════════════════════════════════════════════════════════════
+     Esto no se ve en la página: lo lee Google. Le dice que acá hay
+     un negocio con nombre, dirección, teléfono y horario, en vez de
+     un texto cualquiera. Es lo que permite salir como ficha y no
+     sólo como un resultado más.
+
+     Todo lo de abajo ya está publicado en esta misma página. Si un
+     dato no estaba, el campo simplemente no aparece. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CafeOrCoffeeShop",
+  "name": "Café del Hayedo",
+  "description": "Espresso desde $2.000. Bollería, pastelería, helados artesanales y sándwiches gourmet. 23 reseñas, ni una negativa.",
+  "image": "https://mmedinacode.github.io/Cafe-Hayedo-Web/fotos/hero-cafe-helado.jpg",
+  "url": "https://mmedinacode.github.io/Cafe-Hayedo-Web/",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Membrillar 50, local 2",
+    "addressLocality": "Rancagua",
+    "addressRegion": "Región de O'Higgins",
+    "addressCountry": "CL"
+  },
+  "sameAs": [
+    "https://www.instagram.com/cafedelhayedo"
+  ],
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Monday",
+      "opens": "08:00",
+      "closes": "17:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Tuesday",
+      "opens": "08:00",
+      "closes": "17:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Wednesday",
+      "opens": "08:00",
+      "closes": "17:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Thursday",
+      "opens": "08:00",
+      "closes": "17:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Friday",
+      "opens": "08:00",
+      "closes": "17:00"
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -133,7 +197,7 @@
       <p class="eyebrow">Nosotros</p>
       <h2>Todo preparado<br>en el momento</h2>
       <p class="sec-lead">
-        Es la frase que usa un Local Guide que ha ido a cafeterías de
+        Es la frase que nos dejó un cliente que conoce cafeterías de
         Santiago, Rancagua y el sur.
       </p>
     </header>
@@ -152,8 +216,8 @@
         </blockquote>
         <p>
           Croissants, hojaldres, <strong>macarons</strong> y tortas por
-          porción. Google saca “postres” y “macarrones” como los dos temas
-          que más se repiten en sus reseñas.
+          porción. “Postres” y “macarrones” son lo que más se repite en
+          nuestras reseñas.
         </p>
       </div>
     </div>
@@ -174,7 +238,7 @@
         <p>
           Lo demás encaja: mesas de madera de haya, loza azul porcelana,
           plantas, y espacio amplio — <strong>“de fácil acceso” en silla de
-          ruedas</strong>, según el mismo Local Guide.
+          ruedas</strong>.
         </p>
         <a class="lnk" href="https://open.spotify.com/playlist/0JdZNand9zSd0FTIrzscPE" target="_blank" rel="noopener">Escuchar su playlist →</a>
       </div>
@@ -186,7 +250,7 @@
       <figure><img src="fotos/vitrina.jpg" alt="Vitrina con macarons de colores" loading="lazy" decoding="async"></figure>
       <figure><img src="fotos/mesa-compartida.jpg" alt="Mesa servida con café y croissant" loading="lazy" decoding="async"></figure>
     </div>
-    <p class="note">Todas las fotos son del propio local, de su ficha de Google Maps.</p>
+    
 
     <!--
       ⚠️ FALTA FOTO DEL SALÓN.
@@ -204,10 +268,7 @@
     <header class="sec-head reveal">
       <p class="eyebrow">Carta</p>
       <h2>Su pizarra,<br>tal cual</h2>
-      <p class="sec-lead">
-        Los precios de las bebidas están transcritos de la foto de su propia
-        pizarra, publicada en su ficha de Google.
-      </p>
+      <p class="sec-lead">Los precios de nuestra pizarra.</p>
     </header>
 
     <section class="carta-bloque reveal">
@@ -241,19 +302,10 @@
         En la pizarra del local su casilla está vacía. No se le inventa un
         valor ni se le copia el del chocolate.
       -->
-      <p class="note">
-        El <b>mokaccino</b> aparece en su pizarra <b>sin precio asignado</b>:
-        acá se deja igual, sin inventarlo. “Chocolate” es el chocolate
-        caliente, uno de los temas que Google extrae de sus reseñas.
-      </p>
+      
     </section>
 
-    <div class="aviso reveal">
-      <strong>Sobre el resto de la carta:</strong> de la bollería, la
-      pastelería, los helados y los sándwiches <b>no hay ningún precio
-      publicado</b> — ni en su ficha, ni en su Instagram.
-      Así que van sin precio, en vez de con uno inventado.
-    </div>
+    
 
     <section class="carta-bloque reveal">
       <header class="carta-bloque-head">
@@ -275,13 +327,13 @@
         <span class="carta-bloque-n">4 opciones</span>
       </header>
       <div class="menu reveal stagger">
-        <article class="menu-item"><div><h4>Macarons</h4><p>Google extrae “macarrones” como uno de los temas de sus reseñas.</p></div><span class="price">Consultar</span></article>
+        <article class="menu-item"><div><h4>Macarons</h4><p>“Macarrones” es de lo que más se repite en nuestras reseñas.</p></div><span class="price">Consultar</span></article>
         <article class="menu-item">
           <img src="fotos/hero-cafe-helado.jpg" alt="Torta de chocolate y naranja por porción" loading="lazy" decoding="async">
-          <div><h4>Tortas por porción</h4><p>En sus fotos: chocolate con naranja, y una de crema y nueces.</p></div>
+          <div><h4>Tortas por porción</h4><p>En la vitrina: chocolate con naranja, y una de crema y nueces.</p></div>
           <span class="price">Consultar</span></article>
         <article class="menu-item"><div><h4>Tortas enteras</h4><p>Se ven completas en la vitrina.</p></div><span class="price">Consultar</span></article>
-        <article class="menu-item"><div><h4>Postres</h4><p>“Postres” es el tema nº1 que Google extrae de sus reseñas.</p></div><span class="price">Consultar</span></article>
+        <article class="menu-item"><div><h4>Postres</h4><p>“Postres” es lo nº1 de nuestras reseñas.</p></div><span class="price">Consultar</span></article>
       </div>
     </section>
 
@@ -293,9 +345,9 @@
       <div class="menu reveal stagger">
         <article class="menu-item">
           <img src="fotos/mesa-compartida.jpg" alt="Sándwich abierto con jamón serrano y albahaca" loading="lazy" decoding="async">
-          <div><h4>Sándwiches gourmet</h4><p>De su propia bio. En sus fotos, uno con jamón serrano y albahaca.</p></div>
+          <div><h4>Sándwiches gourmet</h4><p> Uno con jamón serrano y albahaca.</p></div>
           <span class="price">Consultar</span></article>
-        <article class="menu-item"><div><h4>Desayunos</h4><p>Un Local Guide marcó su visita como “tipo de comida: desayuno”.</p></div><span class="price">Consultar</span></article>
+        <article class="menu-item"><div><h4>Desayunos</h4></div><span class="price">Consultar</span></article>
         <article class="menu-item"><div><h4>Puré natural</h4><p>“Puré natural 10/10”, dice Maite Baker. Tienen platos preparados.</p></div><span class="price">Consultar</span></article>
       </div>
     </section>
@@ -303,12 +355,11 @@
     <section class="carta-bloque reveal">
       <header class="carta-bloque-head">
         <h3>Helados artesanales</h3>
-        <span class="carta-bloque-n">de su propia bio</span>
+        <span class="carta-bloque-n">de nuestra bio</span>
       </header>
       <div class="aviso reveal">
-        Su bio de Instagram los nombra entre sus cuatro especialidades:
-        <b>“bollería, pastelería, helados artesanales y sándwiches
-        gourmet”</b>. Los sabores cambian según el día.
+        <b>Bollería, pastelería, helados artesanales y sándwiches
+        gourmet.</b> Los sabores cambian según el día.
       </div>
     </section>
 
@@ -318,16 +369,11 @@
         <span class="carta-bloque-n">verificado en reseñas</span>
       </header>
       <div class="aviso reveal">
-        Un Local Guide con 74 reseñas llenó el campo de opciones
-        vegetarianas de su ficha con esta frase: <b>“Tiene todas las
-        opciones y pronto irán añadiendo más”</b>.
+        Hay opciones vegetarianas, y siguen sumando más.
       </div>
     </section>
 
-    <p class="note">
-      Precios de bebidas transcritos de la foto de su pizarra publicada en
-      su ficha de Google.
-    </p>
+    
   </div>
 </section>
 
@@ -337,7 +383,7 @@
     <header class="sec-head reveal">
       <p class="eyebrow">Reseñas</p>
       <h2>5,0 ★ · 23 reseñas</h2>
-      <p class="sec-lead">Las 23 son de cinco estrellas. Copiadas tal cual de su ficha.</p>
+      <p class="sec-lead">Las 23 son de cinco estrellas.</p>
     </header>
 
     <div class="revs reveal stagger">
@@ -368,7 +414,7 @@
       <div class="ficha"><b>Silla de ruedas</b><p>“Es de fácil acceso y de espacio amplio, muy cómoda”</p></div>
       <div class="ficha"><b>Vegetarianos</b><p>“Tiene todas las opciones y pronto irán añadiendo más”</p></div>
     </div>
-    <p class="note">Los cuatro recuadros son campos que un Local Guide llenó en su reseña de Google.</p>
+    
 
     <div class="rev-cta reveal">
       <a class="btn btn-solid" href="https://search.google.com/local/reviews?placeid=ChIJ6a1vOgBFY5YRTaWDtAtgO2s" target="_blank" rel="noopener">Leer las 23 reseñas</a>
@@ -383,7 +429,7 @@
     <header class="sec-head reveal">
       <p class="eyebrow">Redes</p>
       <h2>Dónde encontrarnos</h2>
-      <p class="sec-lead">Sólo lo verificado. Ningún perfil inventado.</p>
+      <p class="sec-lead">Todos nuestros canales, en un solo lugar.</p>
     </header>
 
     <div class="redes">
@@ -405,7 +451,7 @@
           <figure><img src="fotos/vitrina.jpg" alt="Vitrina con macarons y croissants" loading="lazy" decoding="async"></figure>
           <figure><img src="fotos/espresso.jpg" alt="Espresso cayendo a la taza" loading="lazy" decoding="async"></figure>
         </a>
-        <p class="red-pie">Es su único canal de contacto: no publican teléfono.</p>
+        <p class="red-pie">Por acá responden los mensajes.</p>
       </article>
 
       <article class="red-card reveal">
@@ -423,7 +469,7 @@
           <figure><img src="fotos/pizarra-precios.jpg" alt="Pizarra del menú con los precios" loading="lazy" decoding="async"></figure>
           <figure><img src="fotos/vitrina.jpg" alt="Vitrina de pastelería" loading="lazy" decoding="async"></figure>
         </a>
-        <p class="red-pie">Su ficha todavía figura <b>sin reclamar</b>.</p>
+        
       </article>
 
       <!-- Playlist verificada el 15-09-2026: el tinyurl de su bio resuelve
@@ -438,8 +484,7 @@
           <span class="red-card-cta">Escuchar →</span>
         </a>
         <p class="red-pie">
-          Es el único link de su bio de Instagram. Y una reseña lo confirma:
-          <b>“muy limpio, buena música”</b>.
+          De nuestras reseñas: <b>“muy limpio, buena música”</b>.
         </p>
       </article>
     </div>
@@ -486,9 +531,8 @@
             <li data-dia="0"><span>Domingo</span><b class="cerrado">Cerrado</b></li>
           </ul>
           <p class="sub">
-            Según su ficha de Google, consultada el 15-09-2026. Es un café
-            de días de semana: cierra a las cinco y no abre el fin de
-            semana.
+            Somos un café de días de semana: cerramos a las cinco y no
+            abrimos el fin de semana.
           </p>
         </div>
 
@@ -498,7 +542,7 @@
             <span class="vtel-ico" style="background:linear-gradient(45deg,#F9CE34,#EE2A7B 50%,#6228D7)" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></span>
             <span class="vtel-txt">
               <b>@cafedelhayedo</b>
-              <em>Su único canal: no publican teléfono</em>
+              <em>Por acá respondemos</em>
             </span>
             <span class="vtel-flecha" aria-hidden="true">→</span>
           </a>
@@ -511,11 +555,7 @@
             <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 7V6a6 6 0 1112 0v1h3v14a2 2 0 01-2 2H5a2 2 0 01-2-2V7h3zm2 0h8V6a4 4 0 10-8 0v1z"/></svg> Para llevar</li>
             <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h11v9H3V6zm12 3h3.5L21 12.5V15h-6V9zM6.5 20a2 2 0 110-4 2 2 0 010 4zm11 0a2 2 0 110-4 2 2 0 010 4z"/></svg> Entrega a domicilio</li>
           </ul>
-          <p class="sub">
-            Servicios declarados en su ficha de Google. La entrega a
-            domicilio la declaran ellos, pero <b>no dicen por dónde se
-            pide</b>.
-          </p>
+          
         </div>
 
         <div class="vblock vblock-cta">
@@ -592,5 +632,6 @@ window.REDES = {
 <script src="horario.js"></script>
 <script src="redes.js"></script>
 <script src="flotantes.js"></script>
+<script src="pulido.js"></script>
 </body>
 </html>
