@@ -8,7 +8,12 @@
 <meta name="robots" content="noindex, nofollow">
 <meta name="theme-color" content="#343943">
 
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23343943'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-family='Georgia,serif' font-size='32' fill='%23D8B285'%3EH%3C/text%3E%3C/svg%3E">
+<!-- Su marca sobre el crema de la página. A 16px las nervaduras de las
+     hojas se pierden —es un logo de trazo fino—, pero el contorno de las
+     tres hojas se reconoce, y a 32px, que es lo que usa casi todo
+     navegador moderno, se ve entero. -->
+<link rel="icon" type="image/png" href="fotos/hayedo-icono.png">
+<link rel="apple-touch-icon" href="fotos/hayedo-icono.png">
 
 <meta property="og:type" content="website">
 <meta property="og:locale" content="es_CL">
@@ -101,10 +106,17 @@
 
 <a class="skip" href="#main">Saltar al contenido</a>
 
+<!-- El logo completo (marca + DEL HAYEDO + CAFÉ) está en
+     fotos/hayedo-logo.png, con fondo transparente. No se usa en la
+     página porque las dos superficies donde cabría entero —la
+     pantalla de carga y el pie— son del gris pizarra de su marca, y
+     el texto del logo es negro. Queda ahí para cualquier pieza sobre
+     fondo claro. -->
 <header class="head">
   <div class="head-in">
     <a class="brand" href="#inicio" data-tab="inicio" aria-label="Café del Hayedo, ir al inicio">
-      <span class="brand-mark" aria-hidden="true">H</span>
+      <img class="brand-marca" src="fotos/hayedo-marca.png" alt=""
+           width="171" height="132" decoding="async">
       <span class="brand-txt"><strong>Café del Hayedo</strong><em>Rancagua</em></span>
     </a>
     <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">

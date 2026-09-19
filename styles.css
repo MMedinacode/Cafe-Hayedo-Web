@@ -750,3 +750,19 @@ h1,h2,h3,h4{
   .carta-bloque-head{ flex-direction:column; align-items:flex-start; gap:4px; }
   .carta-bloque-n{ text-align:left; }
 }
+
+/* ══════════════════════════════════════════════════════════════════════
+   19-09-2026 — su logo, montado
+   ══════════════════════════════════════════════════════════════════════ */
+
+/* La marca sustituye a .brand-mark, la baldosa de letter board con la
+   "H". Hereda su mismo gesto al pasar por encima para que la cabecera se
+   comporte igual que antes. 42px es el alto de la baldosa vieja más un
+   par de píxeles: con el trazo fino de las hojas, menos que eso empieza
+   a emborronarse. */
+.brand-marca{
+  height:42px; width:auto; flex:none; display:block;
+  transition:transform .35s var(--fx);
+}
+.brand:hover .brand-marca{ transform:translateY(-2px) rotate(-4deg); }
+@media (max-width:820px){ .brand-marca{ height:36px } }
